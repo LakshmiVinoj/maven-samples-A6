@@ -1,9 +1,5 @@
 pipeline {
   agent any
-  tools { 
-      maven 'maven_var' 
-      jdk 'java_var' 
-  }
   stages {
     stage('check out') {
       steps {
@@ -18,5 +14,8 @@ pipeline {
     }
 
   }
+  tools {
+    maven 'maven_var'
+    jdk 'java_var'
+  }
 }
-
