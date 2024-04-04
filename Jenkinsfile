@@ -15,6 +15,7 @@ pipeline {
         sh 'mvn verify clean test'
       }
     }
+
   }
   tools {
     maven 'maven_var'
